@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="grid.css">
+</head>
+<body>
+    <nav class="nav">
+        <h3>Name</h3>
+        <ul>
+            <li>Home</li>
+        <li>About</li>
+        <li>Acievements</li>
+        <li>Skills</li>
+        <li>Contest</li>
+    </ul>
+    </nav>
+    <div class="sec">
+        <h1><del>Practice Makes Perfect</del></h1>
+        <h1>Perfect Pracitce Makes Perfect</h1></div>
+    <div class="sec1"><h3>Name</h3><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas perspiciatis tempora rem quidem quas culpa reprehenderit doloremque, odit sed! Assumenda ex doloremque ullam expedita eligendi praesentium vero corrupti nihil natus.</p>
+    </div>
+    
+            <div class="ss"><b>Achievemnets</b>some of my best projects so far</div>
+                <div><div class="s1">School Cricket Team Captain</div></div>
+                <div><div class ="s2">second</div></div>
+                <div><div class="s3">You Tube</div></div>
+            
+    
+           
+        
+</body>
+</html>
