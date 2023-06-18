@@ -1,0 +1,45 @@
+#include<iostream>
+using namespace std;
+struct nd{
+    struct nd *pr;
+    int data;
+    struct nd *p;
+};
+nd *head=NULL;
+void insert(int a){
+    nd *nn=(struct nd*) malloc(sizeof(struct nd));
+    nn->pr=NULL;
+    nn->data=a;
+    nn->p=head;
+    if(head!=NULL)
+        head->pr=nn;
+        head=nn;
+}
+void display()
+{
+    nd *t=head;
+    nd *tail=NULL;
+    while(t!=NULL)
+    {
+        cout<<t->data<<" ";
+        t=t->p;
+    }
+    /*cout<<endl;
+    while(tail!=NULL)
+    {
+        cout<<tail->data<<" ";
+        tail=tail->pr;
+    }*/
+}
+int main()
+{
+    int x,a;
+    cin>>x;
+    for(int i=0;i<x;i++)
+    {
+        cin>>a;
+        insert(a);
+    }
+    display();
+   // return 0;
+}
