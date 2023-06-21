@@ -1,0 +1,35 @@
+#include<iostream>
+#include<queue>
+using namespace std;
+void print(queue<int>Q)
+{
+    while(!Q.empty())
+    {
+        cout<<Q.front()<<" ";
+        Q.pop();
+    }
+}
+void recursion(queue<int>&Q)//'&' used to point the Q to be used in this fn;
+{
+    if(Q.empty())
+    {
+        return;
+    }
+    int val=Q.front();
+    Q.pop();
+    recursion(Q);
+    Q.push(val);
+}
+int main()
+{
+    queue<int> Q;
+    int x,a;
+    cin>>x;
+    for(int i=0;i<x;i++)
+    {
+        cin>>a;
+        Q.push(a);
+    }
+    recursion(Q);
+    print(Q);
+}
